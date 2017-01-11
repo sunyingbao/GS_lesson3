@@ -25,3 +25,6 @@ r2[] <- (1:ncell(r2)) / 10
 r3 <- minusRaster(r, r2) 
 ## Now performs the calculation and plots the resulting RasterLayer
 r4 <- minusRaster(r, r2, plot=TRUE) 
+
+a = raster(nrow=50, ncol=50)
+a[] = floor(rnorm())
