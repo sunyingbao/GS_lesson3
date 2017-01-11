@@ -1,21 +1,27 @@
 # Jasper Siebring
 # 11 January 2017
-library(raster)
 
-source('R/ageCalculator.R')
-source('R/HelloWorld.R')
-source('R/minusRaster.R')
+source('R/validate_year.R') #checks if input is valid (i.e. after 1582 and numeric)
+source('R/Check_LeapYear.R') #checks if the given year is a leapyear
+
+#main function containing the validation and the checking of the leapyear
+leap_year = function(year){
+  check = (validate_year(year))
+  
+  
+  if (validate_year(year) == TRUE){ 
+    result = valid is_leap(year)
+  } else {
+    result = "Input is not valid!"
+  }
+  return (result)
+}
 
 
-HelloWorld('john')
-ageCalculator(2009)
+a = x[[Reason]]
+b = x[[Valid]]
 
-# import dataset
-r <- raster(system.file("external/rlogo.grd", package="raster")) 
-r2 <- r 
-# Filling the rasterLayer with new values.
-r2[] <- (1:ncell(r2)) / 10
-# Performs the calculation
-r3 <- minusRaster(r, r2)
+
 
 #testing
+#leap_year(2004) 

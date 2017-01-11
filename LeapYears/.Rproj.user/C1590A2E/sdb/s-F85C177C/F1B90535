@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Jasper Siebring\n# 11 January 2017\n\nsource('R/validate_year.R') #checks if input is valid (i.e. after 1582 and numeric)\nsource('R/Check_LeapYear.R') #checks if the given year is a leapyear\n\n#main function containing the validation and the checking of the leapyear\nleap_year = function(year){\n  check = (validate_year(year))\n  \n  \n  if (validate_year(year) == TRUE){ \n    result = valid is_leap(year)\n  } else {\n    result = \"Input is not valid!\"\n  }\n  return (result)\n}\n\n\na = x[[Reason]]\nb = x[[Valid]]\n\n\n\n#testing\n#leap_year(2004) ",
+    "created" : 1484143518297.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "976751971",
+    "id" : "F1B90535",
+    "lastKnownWriteTime" : 1484146058,
+    "last_content_update" : 1484146058276,
+    "path" : "//wurnet.nl/Homes/siebr007/My Documents/Geoscripting/GS_GIT/LeapYears/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

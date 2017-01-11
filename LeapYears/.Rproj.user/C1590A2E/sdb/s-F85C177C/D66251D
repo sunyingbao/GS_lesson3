@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Jasper Siebring\n#11 January 2017\n\n#checks if the year is before 1582, i.e. the start of Gregorian calendar and is.numeric\n\nvalidate_year = function(year){\n  if (year <= 1581){\n    valid = FALSE\n    reason = (\"Invalid input: before 1582\")\n  } \n  if (!is.numeric(year)){\n    valid = FALSE\n    reason = (\"Invalid input: not numeric\")\n  }\n  if (year >= 1582 & is.numeric(year)){\n      valid = TRUE\n      reason = NA\n  }\n  return (list(reason, valid))\n}\n\n\n",
+    "created" : 1484144607252.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1579967728",
+    "id" : "D66251D",
+    "lastKnownWriteTime" : 1484146039,
+    "last_content_update" : 1484146039435,
+    "path" : "//wurnet.nl/Homes/siebr007/My Documents/Geoscripting/GS_GIT/LeapYears/R/validate_year.R",
+    "project_path" : "R/validate_year.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

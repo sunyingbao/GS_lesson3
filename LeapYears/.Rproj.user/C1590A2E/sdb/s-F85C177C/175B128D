@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Jasper Siebring\n# 11 January 2017\n\nresult = FALSE \n\nis_leap = function(year) {\n  if (year %% 4 == 0) {\n    result = TRUE\n    } \n  if (year %% 100 == 0) {\n    result = FALSE\n    } \n  if (year %% 400 == 0) {\n    result = TRUE\n    } \n  return (result) \n  }\n",
+    "created" : 1484144534766.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4279759803",
+    "id" : "175B128D",
+    "lastKnownWriteTime" : 1484144338,
+    "last_content_update" : 1484144338,
+    "path" : "//wurnet.nl/Homes/siebr007/My Documents/Geoscripting/GS_GIT/LeapYears/R/Check_LeapYear.R",
+    "project_path" : "R/Check_LeapYear.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
